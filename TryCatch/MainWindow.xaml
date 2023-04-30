@@ -1,0 +1,36 @@
+﻿<Window x:Class="TryCatch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TryCatch"
+        mc:Ignorable="d"
+        Title="Обработка числа" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label Content="Введите число"></Label>
+        <TextBox Margin="50 70" Grid.Row="0"  Grid.Column="0" Name="TextBox1"></TextBox>
+        <Button Content="Добавить" Margin="10" Grid.Row="0"  Grid.Column="1" Click="Click1"></Button>
+        <ListBox Margin="10" Grid.Row="1" Grid.Column="0" Name="ListBox1"></ListBox>
+        <Grid Grid.Row="1"  Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Margin="30 0 20 60" Content="Сохранить" Click="Click2"></Button>
+            <Button Margin="30 60 20 0" Content="Загрузить" Click="Click3"></Button>
+            <Label Grid.Row="1" Content="Введите имя файла откуда считать"></Label>
+            <TextBox Grid.Row="1" Margin="40" Name="filename"></TextBox>
+        </Grid>
+    </Grid>
+</Window>
